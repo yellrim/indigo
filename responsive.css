@@ -1,3 +1,5 @@
+
+/* 데스크탑 (1132px 이상) 적용 스타일 */
 .clearfix::after{
     content: '';
     display: block;
@@ -85,9 +87,30 @@ hr {
     background-color: white;
 }
 
+.header .btn-nav {
+    display: none;
+    float: right;
+}
+
+.header .btn-nav span {
+    width: 30px;
+    height: 4px;
+    margin-bottom: 6px;
+    border-radius: 2px;
+    background-color: #616161;
+    text-indent: -999999px;
+    cursor: pointer;
+}
+
+.header .btn-nav span:last-child{
+    margin-bottom: 0;
+}
+
 .header .container h1 {float: left;}
 
-.header .container nav {float: right;}
+.header .container nav {
+    float: right;
+}
 
 .header .container nav ul li {
     display: inline-block;
@@ -365,7 +388,7 @@ form input[type=submit] {
 }
 /* footer 스타일 끝 */
 
-
+/* 테블릿(1131px 이하) 적용 스타일 */
 @media (max-width:1131px){
 
     /* we are 스타일 시작 */
@@ -504,4 +527,54 @@ form input[type=submit] {
         width: 100%;
     }
     /* blog,cantact 스타일 끝 */
+}
+
+/* 모바일(768px 이하) 적용 스타일 */
+@media (max-width:768px){
+    .we-are li,.work li,.blog li {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .header nav{
+        display: none;
+        position: fixed;
+        right: 0;
+        left: 0;
+        top: 77.97px;
+        bottom: 0;
+        padding: 20px;
+        background-color: black;
+    }
+
+    .header .container nav ul {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-flow: column;
+        justify-content: space-around;
+    }
+
+    .header .container nav ul li{
+        font-weight: 700;
+        font-size: 32px;
+        color: #e0e0e0;
+    }
+    .we-are li{
+    margin-bottom: 10px;
+    }
+
+    .we-are li:last-child {
+        margin-bottom: 0;
+    }
+
+    .blog li{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .header .btn-nav {
+        display: block;
+    }
+
 }
