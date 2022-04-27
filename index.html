@@ -55,63 +55,7 @@
             float:left;
             width:100%;            
         }
-        /* intro 스타일 */
 
-        .wrap>.intro{
-            position: fixed;
-            left: 0;
-            right: 0;
-            top: -100%;
-            bottom: 100;
-            z-index: 99999px;
-            background-color: black;
-
-            margin-bottom: 0;
-            animation: ani01 0.3s 10s forwards;
-        }
-
-        .intro-box {
-            position: absolute;
-            left: 0;
-            right: 0;
-            top: 50%;
-            transform: translate(0,-50%);
-            display: inline;
-        }
-        .intro-box span{
-            display: inline;
-            background-color: white;
-            filter: blur();
-        }
-
-        .intro-box h2{
-            margin-bottom: 20px;
-            text-align: center;
-        }
-
-        .intro-box hr {
-            width: 0;
-            background-color: white;
-            animation: top-move 0.3s linear 4s forwards;
-        }    
-        @keyframes ani01 {
-            from{
-                top: 0;
-                bottom: 0;
-            }
-        }   to{
-            top: -100%;
-            bottom: 100%;
-        }
-
-        @keyframes blur {
-            from{
-                filter: blur(5px);
-            }
-       }    to{
-           
-           top: -100;
-       }
         /* HEADER 스타일 */
         .header{
             background-color:#fff;
@@ -483,25 +427,6 @@
 </head>
 <body>
     <section class="wrap">
-        <div class="sec intro">
-            <div class="container">
-                <div class="contents">
-                    <div class="intro-box">
-                        <h2><span>L</span>
-                            <span>O</span>
-                            <span>D</span>
-                            <span>I</span>
-                            <span>N</span>
-                            <span>G</span>
-                            <span>.</span>
-                            <span>.</span>
-                            <span>.</span>
-                        </h2>
-                        <hr>
-                    </div>
-                </div>
-            </div>
-        </div>
         <header class="header">
             <div class="container jumbo">
                 <div class="contents clearfix">
@@ -538,11 +463,11 @@
                             <!-- Additional required wrapper -->
                             <div class="swiper-wrapper">
                                 <!-- Slides -->
-                                <div class="swiper-slide"><img src="./img/slide01.jpg" alt="슬라이더1"></div>
-                                <div class="swiper-slide"><img src="./img/slide01.jpg" alt="슬라이더2"></div>
-                                <div class="swiper-slide"><img src="./img/slide01.jpg" alt="슬라이더3"></div>
-                                <div class="swiper-slide"><img src="./img/slide01.jpg" alt="슬라이더4"></div>
-                                <div class="swiper-slide"><img src="./img/slide01.jpg" alt="슬라이더5"></div>
+                                <div class="swiper-slide"><img src="./images/slide01.jpg" alt="슬라이더1"></div>
+                                <div class="swiper-slide"><img src="./images/slide01.jpg" alt="슬라이더2"></div>
+                                <div class="swiper-slide"><img src="./images/slide01.jpg" alt="슬라이더3"></div>
+                                <div class="swiper-slide"><img src="./images/slide01.jpg" alt="슬라이더4"></div>
+                                <div class="swiper-slide"><img src="./images/slide01.jpg" alt="슬라이더5"></div>
                             </div>
                             <!-- If we need pagination -->
                             <div class="swiper-pagination"></div>
@@ -570,22 +495,22 @@
                     </div>                    
                     <div class="sec-contents clearfix">
                         <div class="sec-list sec-list01">
-                            <div class="img-box"><img src="./img/ico-pro01.jpg" alt="home"></div>
+                            <div class="img-box"><img src="./images/ico-pro01.jpg" alt="home"></div>
                             <h3 class="sec-list-tit">home</h3>
                             <p class="sec-list-txt">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                         </div>
                         <div class="sec-list sec-list02">
-                            <div class="img-box"><img src="./img/ico-pro02.jpg" alt="we are "></div>
+                            <div class="img-box"><img src="./images/ico-pro02.jpg" alt="we are "></div>
                             <h3 class="sec-list-tit">we are</h3>
                             <p class="sec-list-txt">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                         </div>
                         <div class="sec-list sec-list03">
-                            <div class="img-box"><img src="./img/ico-pro03.jpg" alt="work"></div>
+                            <div class="img-box"><img src="./images/ico-pro03.jpg" alt="work"></div>
                             <h3 class="sec-list-tit">work</h3>
                             <p class="sec-list-txt">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                         </div>
                         <div class="sec-list sec-list04">
-                            <div class="img-box"><img src="./img/ico-pro04.jpg" alt="blog"></div>
+                            <div class="img-box"><img src="./images/ico-pro04.jpg" alt="blog"></div>
                             <h3 class="sec-list-tit">blog</h3>
                             <p class="sec-list-txt">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                         </div>
@@ -610,42 +535,42 @@
                     </div>
                     <div class="sec-contents clearfix">
                         <div class="sec-list sec-list01">
-                            <div class="img-box"><img src="./img/img-work01.jpg" alt="달리기"></div>
+                            <div class="img-box"><img src="./images/img-work01.jpg" alt="달리기"></div>
                             <h3 class="sec-list-tit">달리기</h3>
                             <p class="sec-list-txt">육상</p>
                         </div>
                         <div class="sec-list sec-list02">
-                            <div class="img-box"><img src="./img/img-work02.jpg" alt="미식축구"></div>
+                            <div class="img-box"><img src="./images/img-work02.jpg" alt="미식축구"></div>
                             <h3 class="sec-list-tit">미식축구</h3>
                             <p class="sec-list-txt">구기</p>
                         </div>
                         <div class="sec-list sec-list03">
-                            <div class="img-box"><img src="./img/img-work03.jpg" alt="헬스"></div>
+                            <div class="img-box"><img src="./images/img-work03.jpg" alt="헬스"></div>
                             <h3 class="sec-list-tit">헬스</h3>
                             <p class="sec-list-txt">트레이닝</p>
                         </div>
                         <div class="sec-list sec-list04">
-                            <div class="img-box"><img src="./img/img-work04.jpg" alt="달리기2"></div>
+                            <div class="img-box"><img src="./images/img-work04.jpg" alt="달리기2"></div>
                             <h3 class="sec-list-tit">달리기2</h3>
                             <p class="sec-list-txt">육상</p>
                         </div>
                         <div class="sec-list sec-list05">
-                            <div class="img-box"><img src="./img/img-work05.jpg" alt="권투"></div>
+                            <div class="img-box"><img src="./images/img-work05.jpg" alt="권투"></div>
                             <h3 class="sec-list-tit">권투</h3>
                             <p class="sec-list-txt">투기</p>
                         </div>
                         <div class="sec-list sec-list06">
-                            <div class="img-box"><img src="./img/img-work06.jpg" alt="아이스하키"></div>
+                            <div class="img-box"><img src="./images/img-work06.jpg" alt="아이스하키"></div>
                             <h3 class="sec-list-tit">아이스하키</h3>
                             <p class="sec-list-txt">빙상</p>
                         </div>
                         <div class="sec-list sec-list07">
-                            <div class="img-box"><img src="./img/img-work07.jpg" alt="스케이트보드"></div>
+                            <div class="img-box"><img src="./images/img-work07.jpg" alt="스케이트보드"></div>
                             <h3 class="sec-list-tit">스케이트보드</h3>
                             <p class="sec-list-txt">레포츠</p>
                         </div>
                         <div class="sec-list sec-list08">
-                            <div class="img-box"><img src="./img/img-work08.jpg" alt="농구"></div>
+                            <div class="img-box"><img src="./images/img-work08.jpg" alt="농구"></div>
                             <h3 class="sec-list-tit">농구</h3>
                             <p class="sec-list-txt">구기</p>
                         </div>
@@ -668,17 +593,17 @@
                     </div>
                     <div class="sec-contents clearfix">
                         <div class="sec-list sec-list01">
-                            <div class="img-box"><img src="./img/img-blog01.jpg" alt="블로그1"></div>
+                            <div class="img-box"><img src="./images/img-blog01.jpg" alt="블로그1"></div>
                             <h3 class="sec-list-tit">OCT 30, 2016</h3>
                             <p class="sec-list-txt">There are many variations of <br> passages of Lorem Ipsum</p>
                         </div>
                         <div class="sec-list sec-list02">
-                            <div class="img-box"><img src="./img/img-blog02.jpg" alt="블로그2"></div>
+                            <div class="img-box"><img src="./images/img-blog02.jpg" alt="블로그2"></div>
                             <h3 class="sec-list-tit">OCT 28, 2016</h3>
                             <p class="sec-list-txt">There are many variations of <br> passages of Lorem Ipsum</p>
                         </div>
                         <div class="sec-list sec-list03">
-                            <div class="img-box"><img src="./img/img-blog03.jpg" alt="블로그3"></div>
+                            <div class="img-box"><img src="./images/img-blog03.jpg" alt="블로그3"></div>
                             <h3 class="sec-list-tit">OCT 26, 2016</h3>
                             <p class="sec-list-txt">There are many variations of <br> passages of Lorem Ipsum</p>
                         </div>
@@ -693,6 +618,7 @@
                         <h2>contact</h2>
                     </div>
                     <div class="sec-contents">
+
                     </div>
                 </div>
             </div>
